@@ -1,3 +1,3 @@
 #!/bin/bash
-source ~/.bash_profile
+source ~/.zshenv
 brew file cask_upgrade -C
