@@ -6,3 +6,5 @@ ln -sf ~/dotfiles/.atom ~/.atom
 ln -sf ~/dotfiles/.inputrc ~/.inputrc
 ln -sf ~/dotfiles/.gitmessage.txt ~/.gitmessage.txt
 ln -sf ~/dotfiles/.jshintrc ~/.jshintrc
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.oh-my-zsh ~/.oh-my-zsh
