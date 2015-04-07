@@ -9,3 +9,5 @@ ln -sf ~/dotfiles/.jshintrc ~/.jshintrc
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/.oh-my-zsh ~/.oh-my-zsh
 ln -sf ~/dotfiles/.lftprc ~/.lftprc
+ln -sf ~/dotfiles/.rbenv ~/.rbenv
+ln -sf ~/dotfiles/.ctags ~/.ctags
