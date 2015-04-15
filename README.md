@@ -25,7 +25,7 @@
    `$ brew tap rcmdnk/file`  
    `$ brew install brew-file`
 2. brew file のリポジトリを連携  
-   `$ brew file set_repo -r hi0711/Brewfile`  
+   `$ brew file set_repo -r hi0711/brewfile`  
    `$ brew file edit`で編集できることを確認
 3. 各アプリケーションのインストール  
    `$ brew file install`  
