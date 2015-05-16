@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<root>
+  <list>
+    <item>
+      <name>ESCAPE with EISUU(Terminal)</name>
+      <identifier>private.app_terminal_esc_with_eisuu</identifier>
+      <only>TERMINAL, VI</only>
+      <autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::ESCAPE, KeyCode::JIS_EISUU</autogen>
+    </item>
+    <item>
+      <name>BRACKET_LEFT with EISUU(Terminal)</name>
+      <identifier>private.app_terminal_ctrl[_with_eisuu</identifier>
+      <only>TERMINAL, VI</only>
+      <autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::BRACKET_LEFT, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+    </item>
+    <item>
+      <name>Ctrl-j with EISUU(Terminal)</name>
+      <identifier>private.app_terminal_ctrlj_with_eisuu</identifier>
+      <only>TERMINAL, VI</only>
+      <autogen>--KeyToKey-- KeyCode::J, VK_CONTROL, KeyCode::J, VK_CONTROL, KeyCode::JIS_EISUU</autogen>
+    </item>
+  </list>
+</root>
