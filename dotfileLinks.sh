@@ -11,3 +11,4 @@ ln -sf ~/dotfiles/.oh-my-zsh ~/.oh-my-zsh
 ln -sf ~/dotfiles/.lftprc ~/.lftprc
 ln -sf ~/dotfiles/.rbenv ~/.rbenv
 ln -sf ~/dotfiles/.ctags ~/.ctags
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
