@@ -8,3 +8,4 @@ ln -sf ~/dotfiles/.jshintrc ~/.jshintrc
 ln -sf ~/dotfiles/.lftprc ~/.lftprc
 ln -sf ~/dotfiles/.ctags ~/.ctags
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
