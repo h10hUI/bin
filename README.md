@@ -5,7 +5,7 @@
 1. xcode のインストール（from appstore）
 2. comandline ツールのインストール  
    `$ xcode-select --install`
-   
+
 ## Homebrewのインストール
 
 1. 下記コマンドを実行  
@@ -13,7 +13,7 @@
 2. brew doctor で診断  
    `$ brew doctor`  
    *エラーが出たら対応*
-   
+
 ## git のインストール
 
 まずはgitをインストールする。  
@@ -30,7 +30,13 @@
 3. 各アプリケーションのインストール  
    `$ brew file install`  
    *やったことないのでできるか不安*
-   
+
+上記githubとの連携がうまくいかないので、Googleドライブに移行  
+* `admin@` のドライブにBrewfileを保存  
+* `$export HOMEBREW_BREWFILE=~/Google\ ドライブ/Brewfile` でファイル指定  
+* 各アプリケーションのインストール  
+    `$brew file install`
+
 ## デフォルトの vim を変える
 
 1. brew file で vim --with-lua がインストールされているはず
@@ -41,14 +47,14 @@
    `$ sudo ln /usr/local/Celler/vim/[latest]/bin/vim /usr/bin`
 4. 配置できたことの確認  
    `$ vim --version`
-   
+
 ## NeoBundle の導入
 
 1. .vim/ 内に bundle/ を作成  
    ` $ mkdir -p ~/.vim/bundle`
 2. 作成したフォルダに neobundle.vim をクローンする  
    ` $ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim`
-   
+
 ## ログインシェルを zsh に設定
 
 1. インストールされているシェルとパスの確認  
@@ -58,7 +64,7 @@
    *末尾に `/usr/local/bin/zsh` を追加する*
 3. デフォルトのシェルを変更  
    `$ chsh -s /usr/local/bin/zsh`
-   
+
 ## 各設定ファイルの反映
 
 1. $HOME 直下に bin リポジトリをクローン  
@@ -68,5 +74,5 @@
    `$ git clone https://github.com/hi0711/plistFile`
 3. bin/ で下記コマンドを実行  
    `$ sh dotfileLinks.sh`
-   
+
    他、細かい設定などは追って変更していく。
