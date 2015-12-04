@@ -1,4 +1,5 @@
 #!/bin/sh
+source ~/.zshenv
 # ファイル名の空白を"_"に変更
 find . -name "* *" | rename 's/ /_/g' *
 # ダウンロードフォルダ1日以上前削除
