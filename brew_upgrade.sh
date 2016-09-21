@@ -1,4 +1,4 @@
 #!/bin/bash
 source ~/.zshenv
 brew update; brew upgrade -all; brew cleanup
-cask-upgrade; cask-cleanup
+brew file cask_upgrade -C && brew cask clenup
