@@ -7,4 +7,4 @@ find $HOME/Desktop/* -ctime +1 -print0 | xargs -J% mv % $HOME/.Trash
 find $HOME/.vim/undo/* -ctime +2 -print0 | xargs  rm -rf
 find $HOME/.vim/backup/* -ctime +2 -print0 | xargs rm -rf
 # .DS_Store削除
-find $HOME/* -name "*.DS_Store" | xargs rm -rf
+find $HOME -name "*.DS_Store" | xargs rm -rf
