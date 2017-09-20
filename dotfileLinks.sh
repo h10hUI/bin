@@ -1,11 +1,16 @@
 #!/bin/sh
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.zshenv ~/.zshenv
-ln -sf ~/dotfiles/.inputrc ~/.inputrc
-ln -sf ~/dotfiles/.gitmessage.txt ~/.gitmessage.txt
-ln -sf ~/dotfiles/.jshintrc ~/.jshintrc
-ln -sf ~/dotfiles/.lftprc ~/.lftprc
-ln -sf ~/dotfiles/.ctags ~/.ctags
-ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
-ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+# ln -sf $HOME/dotfiles/.vimrc $HOME/.vimrc
+ln -sf $HOME/dotfiles/.zshrc $HOME/.zshrc
+ln -sf $HOME/dotfiles/.zshenv $HOME/.zshenv
+ln -sf $HOME/dotfiles/.inputrc $HOME/.inputrc
+ln -sf $HOME/dotfiles/.jshintrc $HOME/.jshintrc
+ln -sf $HOME/dotfiles/.lftprc $HOME/.lftprc
+ln -sf $HOME/dotfiles/.ctags $HOME/.ctags
+ln -sf $HOME/dotfiles/.tmux.conf $HOME/.tmux.conf
+ln -sf $HOME/dotfiles/.gitconfig $HOME/.gitconfig
+ln -sf $HOME/dotfiles/.tigrc $HOME/.tigrc
+ln -sf $HOME/.vim $HOME/.config/nvim
+ln $HOME/dotfiles/init.vim $HOME/.config/nvim/
+ln $HOME/dotfiles/init.vim $HOME/.vim
+ln $HOME/dotfiles/dein.toml $HOME/.vim
+ln $HOME/dotfiles/dein_lazy.toml $HOME/.vim

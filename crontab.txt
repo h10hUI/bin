@@ -1,7 +1,7 @@
-MAILTO = "hiroshi.sato@dmp.co.jp"
+MAILTO = "hiroshi_sato@life-technology.jp"
 
 # 毎時0分に実行
 0 * * * * /bin/sh $HOME/bin/delete_tmp_file.sh
 
 # 毎日10時に実行
-00 10 * * * /bin/sh $HOME/bin/cask_upgrade.sh
+00 10 * * * /bin/sh $HOME/bin/brew_upgrade.sh
