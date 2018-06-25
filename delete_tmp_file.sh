@@ -11,4 +11,4 @@ find ~/Desktop/* -ctime +1 -print0 | xargs -J% mv % ~/.Trash
 find ~/.vim/undo/* -ctime +2 -print0 >/dev/null 2>&1 | xargs  rm -rf
 find ~/.vim/backup/* -ctime +2 -print0 >/dev/null 2>&1 | xargs rm -rf
 # .DS_Store削除
-find ~ -not -iwholename "* *" -not -iwholename "*/Gdrive/*" -type f -name "*.DS*" | xargs rm -rf
+find ~ -not -iwholename "* *" -not -iwholename "*/Gdrive/*" -type f -name "*.DS*" -type f -name "*.local*" | xargs rm -rf
