@@ -1,7 +1,9 @@
+# crontab -e
+
 MAILTO = "admin@hi0711.xyz"
 
 # 毎時0分に実行
-0 * * * * /bin/sh $HOME/bin/delete_tmp_file.sh
+0 * * * * /bin/sh $HOME/bin/delete_tmp_file.sh > /dev/null 2>&1
 0 * * * * /usr/local/bin/zsh $HOME/bin/remove_space.sh
 
 # 毎日10時に実行
