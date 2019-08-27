@@ -1,5 +1,3 @@
-# crontab -e
-
 MAILTO = "admin@hi0711.xyz"
 
 # 毎時0分に実行
@@ -8,3 +6,5 @@ MAILTO = "admin@hi0711.xyz"
 
 # 毎日10時に実行
 00 10 * * * /bin/sh $HOME/bin/brew_upgrade.sh
+
+### EOF ###
