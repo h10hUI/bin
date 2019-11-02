@@ -9,4 +9,4 @@ find ~/Desktop/* -name "スクリーンショット*" -ctime +1 -print0 | xargs 
 find ~/.config/nvim/undo/* -ctime +2 -print0 | xargs -0  rm -rf
 find ~/.config/nvim/backup/* -ctime +2 -print0 | xargs -0 rm -rf
 # .DS_Store削除
-find ~ -not -iwholename "* *" -not -iwholename "*/Gdrive/*" -type f -name "*.DS_*" -print0 | xargs -0 rm -rf
+find ~/Desktop ~/Downloads ~/workspace -type f -name ".DS_*" | xargs rm -rf
