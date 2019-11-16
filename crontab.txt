@@ -10,5 +10,6 @@ MAILTO = "admin@hi0711.xyz"
 # 15分おきに実行
 */15 * * * * /usr/bin/rsync ~/.config/nvim/dein.toml ~/dotfiles/dein.toml
 */15 * * * * /usr/bin/rsync ~/.config/nvim/init.vim ~/dotfiles/init.vim
+*/15 * * * * /usr/bin/rsync ~/.Brewfile ~/dotfiles/.Brewfile
 
 ### EOF ###
