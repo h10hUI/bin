@@ -13,4 +13,5 @@
 /usr/bin/find ~/Desktop -type f -iwholename "*ds_store*" -print0 | xargs -0 rm -rf
 /usr/bin/find ~/Downloads -type f -iwholename "*ds_store*" -print0 | xargs -0 rm -rf
 /usr/bin/find ~/workspace -type f -iwholename "*ds_store*" -print0 | xargs -0 rm -rf
+/usr/bin/find ~ -maxdepth 1 -type f -iwholename "*ds_store*" -print0 | xargs -0 rm -rf
 
