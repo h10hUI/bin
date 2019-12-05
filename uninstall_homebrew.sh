@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 echo "cd `brew --prefix`"
 cd `brew --prefix`

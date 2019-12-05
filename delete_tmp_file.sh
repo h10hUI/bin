@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 # ダウンロードフォルダ1日以上前削除
 find ~/Downloads/* -ctime +1 -print0 | xargs -0 -J% mv % ~/.Trash
 # デスクトップフォルダ1日以上前削除
