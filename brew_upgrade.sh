@@ -1,4 +1,4 @@
 #!/usr/local/bin/zsh -ex
 
-brew update; brew upgrade
-brew cask upgrade
+brew update && brew upgrade
+brew upgrade --cask
