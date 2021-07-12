@@ -7,10 +7,11 @@ MAILTO = "admin@hi0711.xyz"
 
 # 毎日10時に実行
 00 10 * * * /bin/sh $HOME/bin/brew_upgrade.sh
-00 10 * * * /bin/sh $HOME/bin/brew_bundle.sh && /usr/bin/rsync ~/.Brewfile ~/dotfiles/.Brewfile > /dev/null 2>&1
+
+# 毎日16時に実行
+00 16 * * * /bin/sh $HOME/bin/brew_bundle.sh && /usr/bin/rsync ~/.Brewfile ~/dotfiles/.Brewfile > /dev/null 2>&1
 
 # 15分おきに実行
-*/15 * * * * /usr/bin/rsync ~/.config/nvim/dein.toml ~/dotfiles/dein.toml
 */15 * * * * /usr/bin/rsync ~/.config/nvim/init.vim ~/dotfiles/init.vim
 
 ### EOF ###
