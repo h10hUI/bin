@@ -1,4 +1,4 @@
-MAILTO=admin@hi0711.xyz
+MAILTO=satou@aiqlab.com
 
 # 毎時0分に実行
 0 * * * * /bin/sh $HOME/bin/delete_tmp_file.sh > /dev/null 2>&1
