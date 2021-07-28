@@ -1,3 +1,3 @@
-#!/usr/local/bin/zsh -ex
+#!/opt/homebrew/bin/zsh -ex
 
-/usr/local/bin/rg -g '.DS_*' --files --glob=!{Gdrive,Application,Library} /Users/hi0711 | xargs rm -rf
+/opt/homebrew/bin/rg -g '.DS_*' --files --glob=!{Google\ Drive,Application,Library} /Users/hiroshi_aiq | xargs rm -rf

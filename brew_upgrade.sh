@@ -1,4 +1,5 @@
-#!/usr/local/bin/zsh -ex
+#!/opt/homebrew/bin/zsh -ex
 
-brew update && brew upgrade
-brew upgrade --cask
+/opt/homebrew/bin/brew update \
+  && /opt/homebrew/bin/brew upgrade
+/opt/homebrew/bin/brew upgrade --cask
