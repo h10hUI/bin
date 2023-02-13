@@ -5,7 +5,7 @@ MAILTO=satou@aiqlab.com
 0 * * * * /bin/sh $HOME/bin/remove_space.sh
 0 * * * * /bin/sh $HOME/bin/delete_tmp_file_ripgrep.sh
 
-# 毎月第一月曜日の10時半に実行
-30 10 1-7 * * [ "$(date +\%w)" -eq 1 ] && /opt/homebrew/bin/brew update && /opt/homebrew/bin/brew upgrade > /dev/null 2>&1
+# 毎月第一月曜日の12時に実行
+0 12 1-7 * * [ "$(date +\%w)" -eq 1 ] && /opt/homebrew/bin/brew update && /opt/homebrew/bin/brew upgrade > /dev/null 2>&1
 
 ### EOF ###
