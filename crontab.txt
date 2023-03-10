@@ -5,13 +5,7 @@ MAILTO=admin@hi0711.xyz
 0 * * * * /bin/sh $HOME/bin/remove_space.sh
 0 * * * * /bin/sh $HOME/bin/delete_tmp_file_ripgrep.sh
 
-# 毎日10時半に実行
-30 10 * * * /bin/sh $HOME/bin/brew_upgrade.sh
-
-# 毎日16時に実行
-00 16 * * * /bin/sh $HOME/bin/brew_bundle.sh && /usr/bin/rsync ~/.Brewfile ~/dotfiles/.Brewfile > /dev/null 2>&1
-
-# 15分おきに実行
-*/15 * * * * /usr/bin/rsync ~/.config/nvim/init.vim ~/dotfiles/init.vim
+# 毎月第一月曜日の12時に実行
+0 12 1-7 * * [ "$(date +\%w)" -eq 1 ] && /opt/homebrew/bin/brew update && /opt/homebrew/bin/brew upgrade > /dev/null 2>&1
 
 ### EOF ###
