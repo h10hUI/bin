@@ -4,6 +4,8 @@ MAILTO=admin@hi0711.xyz
 0 * * * * /bin/sh $HOME/bin/delete_tmp_file.sh > /dev/null 2>&1
 0 * * * * /bin/sh $HOME/bin/remove_space.sh
 0 * * * * /bin/sh $HOME/bin/delete_tmp_file_ripgrep.sh
+0 * * * * /bin/sh rm -f $HOME/.config/nvim/backup/* > /dev/null 2>&1
+0 * * * * /bin/sh rm -f $HOME/.config/nvim/swap/* > /dev/null 2>&1
 
 # 毎月第一月曜日の12時に実行
 0 12 1-7 * * [ "$(date +\%w)" -eq 1 ] && /opt/homebrew/bin/brew update && /opt/homebrew/bin/brew upgrade > /dev/null 2>&1
