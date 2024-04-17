@@ -4,8 +4,17 @@ MAILTO=admin@hi0711.xyz
 0 * * * * /bin/sh $HOME/bin/delete_tmp_file.sh > /dev/null 2>&1
 0 * * * * /bin/sh $HOME/bin/remove_space.sh
 0 * * * * /bin/sh $HOME/bin/delete_tmp_file_ripgrep.sh
-0 * * * * /bin/sh rm -f $HOME/.config/nvim/backup/* > /dev/null 2>&1
-0 * * * * /bin/sh rm -f $HOME/.config/nvim/swap/* > /dev/null 2>&1
+
+# 毎日15時に実行
+0 15 * * * /bin/sh rm -f $HOME/.config/nvim/backup/* > /dev/null 2>&1
+0 15 * * * /bin/sh rm -f $HOME/.config/nvim/swap/* > /dev/null 2>&1
+
+# AquaSKK の設定更新
+0 */2 * * * cp -f /Library/Input\ Methods/AquaSKK.app/Contents/Resources/act.rule  $HOME/Library/Application\ Support/AquaSKK/act_conf > /dev/null 2>&1
+0 */2 * * * cp -f /Library/Input\ Methods/AquaSKK.app/Contents/Resources/act.conf  $HOME/Library/Application\ Support/AquaSKK/act_conf > /dev/null 2>&1
+
+# cargo の設定更新
+0 */2 * * * /bin/sh cp $HOME/Cargo.toml $HOME/dotfiles > /dev/null 2>&1
 
 # 毎月第一月曜日の12時に実行
 0 12 1-7 * * [ "$(date +\%w)" -eq 1 ] && /opt/homebrew/bin/brew update && /opt/homebrew/bin/brew upgrade > /dev/null 2>&1
